@@ -257,7 +257,7 @@ ul{
 }
 .product-item{
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.8s;
   }
 .product-item:hover{
       transform: scale(1.02);
