@@ -58,7 +58,7 @@
                   class="form_input" required />
               </div>
               <div class="form_group">
-                <button class="form_btn">
+                <button class="form_btn" onclick="LoginForm()">
                   <a href="./index.html" class="form_link" >Login</a>
                 </button>
               </div>
@@ -71,3 +71,17 @@
       </section>
 </body>
 </html>
+<script>
+  const LoginForm  = () => {
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      if (email === "admin" || password === "5555") {
+        alert("login Successful");
+      } else {
+        alert("Invalid email or password")
+      }
+
+      return true;
+  }
+</script>
